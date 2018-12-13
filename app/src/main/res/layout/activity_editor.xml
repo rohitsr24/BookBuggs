@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="@string/edit_detalis"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_24sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <!--Product Overview-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/editor_main_linear_layout_padding"
+        android:orientation="horizontal">
+
+        <!--Product Label-->
+        <TextView
+            android:id="@+id/product_overview"
+            style="@style/EditorLabel"
+            android:text="@string/label_product_overview" />
+
+        <!--Inout Fields-->
+        <LinearLayout
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <!--Product Name Field-->
+            <EditText
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_product_name"
+                android:textStyle="italic"
+                android:backgroundTint="@android:color/black"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <!--Price Field-->
+            <EditText
+                android:id="@+id/poduct_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_price"
+                android:textStyle="italic"
+                android:backgroundTint="@android:color/black"
+                android:inputType="numberSigned"/>
+
+            <!--Quantity Field-->
+            <EditText
+                android:id="@+id/product_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_quantity"
+                android:textStyle="italic"
+                android:backgroundTint="@android:color/black"
+                android:inputType="numberSigned"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Supplier Overview-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/editor_main_linear_layout_padding"
+        android:layout_marginTop="@dimen/overivew_spacing_margin_top"
+        android:orientation="horizontal">
+
+        <!--Supplier Label-->
+        <TextView
+            android:id="@+id/supplier_overview"
+            style="@style/EditorLabel"
+            android:text="@string/label_supplier_overview" />
+
+        <!--Input Fields-->
+        <LinearLayout
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <!--Supplier Name Field-->
+            <EditText
+                android:id="@+id/supplier_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:backgroundTint="@android:color/black"
+                android:hint="@string/edit_supplier_name" />
+
+            <!--Supplier Contact Field-->
+            <EditText
+                android:id="@+id/supplier_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:backgroundTint="@android:color/black"
+                android:hint="@string/edit_supplier_contact"
+                android:inputType="phone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
